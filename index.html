@@ -92,10 +92,20 @@
     document.addEventListener('DOMContentLoaded', function() {
         const navToggle = document.querySelector('.nav-toggle');
         const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-menu a');
 
+        // 汉堡菜单点击事件
         navToggle.addEventListener('click', function() {
             navMenu.classList.toggle('active');
-            navToggle.classList.toggle('active'); // 添加这行来控制汉堡按钮动画
+            navToggle.classList.toggle('active');
+        });
+
+        // 为每个导航链接添加点击事件
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
         });
     });
 </script>

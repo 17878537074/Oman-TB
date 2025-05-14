@@ -65,8 +65,7 @@ body {
 /* 英雄区域样式 */
 .hero-section {
     height: 100vh;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url('https://images.unsplash.com/photo-1544816565-aa8c1166648f?auto=format&fit=crop&q=80') center/cover; */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('https://images.unsplash.com/photo-1544816565-aa8c1166648f?auto=format&fit=crop&q=80') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,8 +152,7 @@ body {
 /* 品牌故事区域样式 */
 .story-section {
     padding: 6rem 2rem;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('https://images.unsplash.com/photo-1578496781985-452d4a934d50?auto=format&fit=crop&q=80') center/cover fixed; */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('https://images.unsplash.com/photo-1578496781985-452d4a934d50?auto=format&fit=crop&q=80') center/cover fixed;
     color: white;
 }
 
@@ -288,6 +286,15 @@ body {
     }
 
     /* 汉堡菜单按钮动画 */
+    /* 汉堡菜单按钮基础样式 */
+    .nav-toggle {
+        display: none; /* 默认隐藏 */
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+    
     .hamburger {
         width: 14px;
         height: 2px;
@@ -295,7 +302,7 @@ body {
         position: relative;
         transition: all 0.3s ease;
     }
-
+    
     .hamburger::before,
     .hamburger::after {
         content: '';
@@ -305,59 +312,66 @@ body {
         background-color: #8B6B4D;
         transition: all 0.3s ease;
     }
+    
+    .hamburger::before {
+        transform: translateY(-1px); /* 减小间距从-8px改为-6px */
+        width: 10px;
+        right: 20%;
+    }
+    
+    .hamburger::after {
+        transform: translateY(1px); /* 减小间距从8px改为6px */
+        width: 8px;
+        right:20%;
+    }
+    
+    @media (max-width: 768px) {
+        .nav-toggle {
+            display: block; /* 只在移动端显示 */
+        }
+        
+        /* 点击时的汉堡菜单动画 */
+        .nav-toggle.active .hamburger {
+            background-color: transparent;
+        }
+    
+        .nav-toggle.active .hamburger::before {
+            transform: rotate(45deg);
+            width: 24px;
+            right: 0;
+        }
+    
+        .nav-toggle.active .hamburger::after {
+            transform: rotate(-45deg);
+            width: 24px;
+            top: -7px;
+            right: 0;
+        }
+    }
+    /* 优化汉堡菜单按钮样式 */
+    .hamburger {
+        width: 20px; /* 稍微减小尺寸 */
+        height: 2px;
+        background-color: #8B6B4D;
+        display: block;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        width: 20px;
+        background-color: #8B6B4D;
+        position: absolute;
+        transition: all 0.3s ease;
+    }
 
     .hamburger::before {
-        transform: translateY(-8px);
-        width: 10px; /* 让上面的线短一点 */
-        right: 0;
+        top: -8px;
     }
 
     .hamburger::after {
-        transform: translateY(8px);
-        width:8px; /* 让下面的线也短一点 */
-        right: 0;
+        top: 8px;
     }
-
-    /* 点击时的汉堡菜单动画 */
-    .nav-toggle.active .hamburger {
-        background-color: transparent;
-    }
-
-    .nav-toggle.active .hamburger::before {
-        transform: rotate(45deg);
-        width: 24px;
-    }
-
-    .nav-toggle.active .hamburger::after {
-        transform: rotate(-45deg);
-        width: 24px;
-        top: 0;
-    }
-}
-
-/* 优化汉堡菜单按钮样式 */
-.hamburger {
-    width: 20px; /* 稍微减小尺寸 */
-    height: 2px;
-    background-color: #8B6B4D;
-    display: block;
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.hamburger::before,
-.hamburger::after {
-    content: '';
-    width: 20px;
-    background-color: #8B6B4D;
-    position: absolute;
-    transition: all 0.3s ease;
-}
-
-.hamburger::before {
-    top: -8px;
-}
-
-.hamburger::after {
-    top: 8px;
 }
