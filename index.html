@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿曼乳香 - 奢华东方香氛</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">OMAN 野奢</div>
+            <div class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#products">产品系列</a></li>
+                <li><a href="#story">品牌故事</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>探索千年乳香传奇</h1>
+                <p>源自阿曼的奢华香氛，传承古老智慧的现代诠释</p>
+                <a href="#products" class="cta-button">探索产品</a>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <h2>精选系列</h2>
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <!-- 产品图片将通过CSS背景图片设置 -->
+                    </div>
+                    <h3>纯正乳香精油</h3>
+                    <p>源自阿曼山脉，百年传承工艺萃取</p>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <!-- 产品图片将通过CSS背景图片设置 -->
+                    </div>
+                    <h3>乳香香水</h3>
+                    <p>东方神秘气息，独特香调体验</p>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <!-- 产品图片将通过CSS背景图片设置 -->
+                    </div>
+                    <h3>乳香护肤系列</h3>
+                    <p>天然护肤精华，尽显东方美韵</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="story" class="story-section">
+            <div class="story-content">
+                <h2>品牌故事</h2>
+                <p>千年乳香路，见证阿曼与世界的芳香对话。我们传承古老智慧，以现代工艺提炼最纯净的乳香精华，为您带来独一无二的东方奢华体验。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>联系我们</h4>
+                <p>电话：+968 XXXXXXXX</p>
+                <p>邮箱：contact@omanfrankincense.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>关注我们</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">微信</a>
+                    <a href="#" class="social-link">微博</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Oman Frankincense. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active'); // 添加这行来控制汉堡按钮动画
+        });
+    });
+</script>
