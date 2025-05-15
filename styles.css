@@ -66,7 +66,7 @@ body {
 /* 英雄区域样式 */
 .hero-section {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('images/9.avif') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('http://swancrb1t.hn-bkt.clouddn.com/9.avif') center/cover;
     /* https://images.unsplash.com/photo-1578496781985-452d4a934d50?auto=format&fit=crop&q=80                       https://images.unsplash.com/photo-1544816565-aa8c1166648f?auto=format&fit=crop&q=80 */
     display: flex;
     align-items: center;
@@ -151,21 +151,21 @@ body {
 
 /* 为每个产品卡片设置不同的背景图片 */
 .product-card:nth-child(1) .product-image {
-    background-image: url('images/index/1.jpg');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/index/1.jpg');
 }
 
 .product-card:nth-child(2) .product-image {
-    background-image: url('images/index/2.avif');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/index/2.avif');
 }
 
 .product-card:nth-child(3) .product-image {
-    background-image: url('images/index/4.png');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/index/4.png');
 }
 .product-card:nth-child(4) .product-image {
-    background-image: url('images/index/3.jpg');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/index/3.jpg');
 }
 .product-card:nth-child(5) .product-image {
-    background-image: url('images/index/5.jpg');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/index/5.jpg');
 }
 
 
@@ -178,7 +178,7 @@ body {
 /* 品牌故事区域样式 */
 .story-section {
     padding: 8rem 2rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url('images/10.avif') center/cover  fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url('http://swancrb1t.hn-bkt.clouddn.com/10.avif') center/cover  fixed;
     color: white;
 }
 
@@ -470,6 +470,10 @@ body {
     transition: transform 0.3s ease;
 }
 
+ a {
+    text-decoration: none;
+}
+
 .product-item:hover {
     transform: translateY(-5px);
 }
@@ -528,53 +532,53 @@ body {
 }
 
 #essential-oils .product-item:nth-child(1) .product-item-image {
-    background-image: url('images/essential-oils/1.jpg');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/essential-oils/1.jpg');
 }
 #essential-oils .product-item:nth-child(2) .product-item-image {
-    background-image: url('images/essential-oils/2.jpg');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/essential-oils/2.jpg');
 }
 #essential-oils .product-item:nth-child(3) .product-item-image {
-    background-image: url('images/essential-oils/3.jpg');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/essential-oils/3.jpg');
 }
 #essential-oils .product-item:nth-child(4) .product-item-image {
-    background-image: url('images/essential-oils/4.jpg');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/essential-oils/4.jpg');
 }
 #essential-oils .product-item:nth-child(5) .product-item-image {
-    background-image: url('images/essential-oils/5.jpg');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/essential-oils/5.jpg');
 }
 #face-cream .product-item:nth-child(1) .product-item-image {
-    background-image: url('images/face-cream/1.avif');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/face-cream/1.avif');
 }
 #face-cream .product-item:nth-child(2) .product-item-image {
-    background-image: url('images/face-cream/2.avif');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/face-cream/2.avif');
 }
 #face-cream .product-item:nth-child(3) .product-item-image {
-    background-image: url('images/face-cream/3.jpg');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/face-cream/3.jpg');
 }
 #face-cream .product-item:nth-child(4) .product-item-image {
-    background-image: url('images/face-cream/4.avif');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/face-cream/4.avif');
 }
 #face-cream .product-item:nth-child(5) .product-item-image {
-    background-image: url('images/face-cream/5.avif');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/face-cream/5.avif');
 }
 #face-cream .product-item:nth-child(6) .product-item-image {
-    background-image: url('images/face-cream/6.jpg');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/face-cream/6.jpg');
 }
 
 #frankincense .product-item:nth-child(1) .product-item-image {
-    background-image: url('images/frankincense/1.jpg');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/frankincense/1.jpg');
 }
 #frankincense .product-item:nth-child(2) .product-item-image {
-    background-image: url('images/frankincense/2.jpg');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/frankincense/2.jpg');
 }
 #soap .product-item:nth-child(1) .product-item-image {
-    background-image: url('images/soap/1.jpg');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/soap/1.jpg');
 }
 #soap .product-item:nth-child(2) .product-item-image {
-    background-image: url('images/soap/2.jpg');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/soap/2.jpg');
 }
 #shampoo .product-item:nth-child(1) .product-item-image {
-    background-image: url('images/shampoo/1.jpg');
+    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/shampoo/1.jpg');
 }
 
 /* 弹窗样式 */
@@ -641,4 +645,224 @@ body {
 .modal h3 {
     color: #8B6B4D;
     margin-bottom: 15px;
+}
+
+/* 产品详情页样式 */
+.product-detail-page {
+  padding-top: 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 2rem 4rem;
+}
+
+.product-detail-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.product-gallery {
+  position: sticky;
+  top: 100px;
+}
+
+.main-image {
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: #F8F8F8;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.thumbnail-list {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.thumbnail.active,
+.thumbnail:hover {
+  opacity: 1;
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #8B6B4D;
+}
+
+.product-info h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  color: #8B6B4D;
+  margin-bottom: 2rem;
+}
+
+.product-description {
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.product-details {
+  margin-top: 3rem;
+}
+
+.product-details h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  /* color: #333; */
+}
+
+.details-content {
+  border-top: 1px solid #eee;
+}
+
+.detail-item {
+  padding: 2rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-item h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.detail-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-item li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.detail-item li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #8B6B4D;
+}
+
+.purchase-section {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+}
+
+.quantity-selector button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.quantity-selector input {
+  width: 60px;
+  height: 40px;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.add-to-cart {
+  flex: 1;
+  height: 40px;
+  background-color: #8B6B4D;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #6F563E;
+}
+
+/* 响应式适配 */
+@media (max-width: 1024px) {
+  .product-detail-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .product-gallery {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-detail-page {
+    padding-top: 60px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .product-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+
+  .purchase-section {
+    flex-direction: column;
+  }
+
+  .quantity-selector {
+    width: 100%;
+  }
+
+  .add-to-cart {
+    width: 100%;
+    padding: 15px 0;
+  }
 }
