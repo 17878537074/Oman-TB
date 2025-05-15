@@ -159,10 +159,10 @@ body {
 }
 
 .product-card:nth-child(3) .product-image {
-    background-image: url('images/index/4.jpg');
+    background-image: url('images/index/4.png');
 }
 .product-card:nth-child(4) .product-image {
-    background-image: url('images/index/3.png');
+    background-image: url('images/index/3.jpg');
 }
 .product-card:nth-child(5) .product-image {
     background-image: url('images/index/5.jpg');
@@ -452,6 +452,10 @@ body {
     font-size: 1.8rem;
     font-weight: 300;
     margin-bottom: 2rem;
+    color: #8B6B4D;
+}
+
+.text-color{
     color: #8B6B4D;
 }
 
