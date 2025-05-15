@@ -43,6 +43,7 @@ body {
     font-family: 'Times New Roman', serif;
     color: #D4A86A;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .nav-menu {
@@ -65,7 +66,8 @@ body {
 /* 英雄区域样式 */
 .hero-section {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('https://images.unsplash.com/photo-1544816565-aa8c1166648f?auto=format&fit=crop&q=80') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('images/9.avif') center/cover;
+    /* https://images.unsplash.com/photo-1578496781985-452d4a934d50?auto=format&fit=crop&q=80                       https://images.unsplash.com/photo-1544816565-aa8c1166648f?auto=format&fit=crop&q=80 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,7 +95,7 @@ body {
 .cta-button {
     display: inline-block;
     padding: 1rem 2.5rem;
-    background-color: #8B6B4D;
+    background-color: #D4A86A;
     color: white;
     text-decoration: none;
     border-radius: 2px;
@@ -141,7 +143,31 @@ body {
     height: 300px;
     background-color: #F0F0F0;
     margin-bottom: 1rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
 }
+
+/* 为每个产品卡片设置不同的背景图片 */
+.product-card:nth-child(1) .product-image {
+    background-image: url('images/index/1.jpg');
+}
+
+.product-card:nth-child(2) .product-image {
+    background-image: url('images/index/2.avif');
+}
+
+.product-card:nth-child(3) .product-image {
+    background-image: url('images/index/3.jpg');
+}
+.product-card:nth-child(4) .product-image {
+    background-image: url('images/index/4.png');
+}
+.product-card:nth-child(5) .product-image {
+    background-image: url('images/index/5.jpg');
+}
+
 
 .product-card h3 {
     font-size: 1.5rem;
@@ -151,8 +177,8 @@ body {
 
 /* 品牌故事区域样式 */
 .story-section {
-    padding: 6rem 2rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('https://images.unsplash.com/photo-1578496781985-452d4a934d50?auto=format&fit=crop&q=80') center/cover fixed;
+    padding: 8rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url('images/10.avif') center/cover  fixed;
     color: white;
 }
 
@@ -344,7 +370,7 @@ body {
         .nav-toggle.active .hamburger::after {
             transform: rotate(-45deg);
             width: 24px;
-            top: -7px;
+            top: -8px;
             right: 0;
         }
     }
@@ -374,4 +400,241 @@ body {
     .hamburger::after {
         top: 8px;
     }
+}
+
+/* 产品列表页样式 */
+.products-list-page {
+    padding-top: 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 2rem 4rem;
+}
+
+.products-filter {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.products-filter h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.filter-options {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.8rem 1.5rem;
+    border: 1px solid #8B6B4D;
+    background: none;
+    color: #8B6B4D;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #8B6B4D;
+    color: white;
+}
+
+.product-category {
+    margin-bottom: 4rem;
+}
+
+.product-category h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: #8B6B4D;
+}
+
+.product-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.product-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item-image {
+    height: 300px;
+    margin-bottom: 1rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.product-item p {
+    color: #8B6B4D;
+    margin-bottom: 0.5rem;
+}
+
+.product-desc {
+    font-size: 0.9rem;
+    color: #666 !important;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .products-list-page {
+        padding-top: 60px;
+    }
+
+    .products-filter h1 {
+        font-size: 2rem;
+    }
+
+    .filter-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .product-category h2 {
+        font-size: 1.5rem;
+    }
+}
+.product-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.product-category {
+    scroll-margin-top: 100px; /* 确保滚动到锚点时留出导航栏的空间 */
+}
+
+#essential-oils .product-item:nth-child(1) .product-item-image {
+    background-image: url('images/essential-oils/1.jpg');
+}
+#essential-oils .product-item:nth-child(2) .product-item-image {
+    background-image: url('images/essential-oils/2.jpg');
+}
+#essential-oils .product-item:nth-child(3) .product-item-image {
+    background-image: url('images/essential-oils/3.jpg');
+}
+#essential-oils .product-item:nth-child(4) .product-item-image {
+    background-image: url('images/essential-oils/4.jpg');
+}
+#essential-oils .product-item:nth-child(5) .product-item-image {
+    background-image: url('images/essential-oils/5.jpg');
+}
+#face-cream .product-item:nth-child(1) .product-item-image {
+    background-image: url('images/face-cream/1.avif');
+}
+#face-cream .product-item:nth-child(2) .product-item-image {
+    background-image: url('images/face-cream/2.avif');
+}
+#face-cream .product-item:nth-child(3) .product-item-image {
+    background-image: url('images/face-cream/3.jpg');
+}
+#face-cream .product-item:nth-child(4) .product-item-image {
+    background-image: url('images/face-cream/4.avif');
+}
+#face-cream .product-item:nth-child(5) .product-item-image {
+    background-image: url('images/face-cream/5.avif');
+}
+#face-cream .product-item:nth-child(6) .product-item-image {
+    background-image: url('images/face-cream/6.jpg');
+}
+
+#frankincense .product-item:nth-child(1) .product-item-image {
+    background-image: url('images/frankincense/1.jpg');
+}
+#frankincense .product-item:nth-child(2) .product-item-image {
+    background-image: url('images/frankincense/2.jpg');
+}
+#soap .product-item:nth-child(1) .product-item-image {
+    background-image: url('images/soap/1.jpg');
+}
+#soap .product-item:nth-child(2) .product-item-image {
+    background-image: url('images/soap/2.jpg');
+}
+#shampoo .product-item:nth-child(1) .product-item-image {
+    background-image: url('images/shampoo/1.jpg');
+}
+
+/* 弹窗样式 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 85%;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .qr-code img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+}
+.close-button {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #8B6B4D;
+}
+
+.close-button:hover {
+    color: #000;
+}
+
+.qr-code {
+    margin: 20px 0;
+}
+
+.qr-code img {
+    max-width: 200px;
+    height: auto;
+}
+
+.modal h3 {
+    color: #8B6B4D;
+    margin-bottom: 15px;
 }
