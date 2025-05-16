@@ -66,7 +66,7 @@ body {
 /* 英雄区域样式 */
 .hero-section {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('http://swancrb1t.hn-bkt.clouddn.com/9.avif') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images//9.avif') center/cover;
     /* https://images.unsplash.com/photo-1578496781985-452d4a934d50?auto=format&fit=crop&q=80                       https://images.unsplash.com/photo-1544816565-aa8c1166648f?auto=format&fit=crop&q=80 */
     display: flex;
     align-items: center;
@@ -151,21 +151,21 @@ body {
 
 /* 为每个产品卡片设置不同的背景图片 */
 .product-card:nth-child(1) .product-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/index/1.jpg');
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images//index/1.jpg');
 }
 
 .product-card:nth-child(2) .product-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/index/2.avif');
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images//index/2.avif');
 }
 
 .product-card:nth-child(3) .product-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/index/4.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images//index/4.png');
 }
 .product-card:nth-child(4) .product-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/index/3.jpg');
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images//index/3.jpg');
 }
 .product-card:nth-child(5) .product-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/index/5.jpg');
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images//index/5.jpg');
 }
 
 
@@ -178,7 +178,7 @@ body {
 /* 品牌故事区域样式 */
 .story-section {
     padding: 8rem 2rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url('http://swancrb1t.hn-bkt.clouddn.com/10.avif') center/cover  fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images//10.avif') center/cover  fixed;
     color: white;
 }
 
@@ -532,53 +532,53 @@ body {
 }
 
 #essential-oils .product-item:nth-child(1) .product-item-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/essential-oils/1.jpg');
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images/essential-oils/1.jpg');
 }
 #essential-oils .product-item:nth-child(2) .product-item-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/essential-oils/2.jpg');
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images/essential-oils/2.jpg');
 }
 #essential-oils .product-item:nth-child(3) .product-item-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/essential-oils/3.jpg');
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images/essential-oils/3.jpg');
 }
 #essential-oils .product-item:nth-child(4) .product-item-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/essential-oils/4.jpg');
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images/essential-oils/4.jpg');
 }
-#essential-oils .product-item:nth-child(5) .product-item-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/essential-oils/5.jpg');
+#essential-oils .product-item5 {
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images/essential-oils/5.jpg');
 }
-#face-cream .product-item:nth-child(1) .product-item-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/face-cream/1.avif');
+#face-cream  .product-item-image1 {
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images/face-cream/1.avif');
 }
-#face-cream .product-item:nth-child(2) .product-item-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/face-cream/2.avif');
+#face-cream .product-item-image2 {
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images/face-cream/2.avif');
 }
-#face-cream .product-item:nth-child(3) .product-item-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/face-cream/3.jpg');
+#face-cream .product-item-image3 {
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images/face-cream/3.jpg');
 }
-#face-cream .product-item:nth-child(4) .product-item-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/face-cream/4.avif');
+#face-cream .product-item-image4 {
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images/face-cream/4.avif');
 }
-#face-cream .product-item:nth-child(5) .product-item-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/face-cream/5.avif');
+#face-cream  .product-item-image5 {
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images/face-cream/5.avif');
 }
-#face-cream .product-item:nth-child(6) .product-item-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/face-cream/6.jpg');
+#face-cream  .product-item-image6 {
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images/face-cream/6.jpg');
 }
 
 #frankincense .product-item:nth-child(1) .product-item-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/frankincense/1.jpg');
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images/frankincense/1.jpg');
 }
 #frankincense .product-item:nth-child(2) .product-item-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/frankincense/2.jpg');
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images/frankincense/2.jpg');
 }
 #soap .product-item:nth-child(1) .product-item-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/soap/1.jpg');
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images/soap/1.jpg');
 }
 #soap .product-item:nth-child(2) .product-item-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/soap/2.jpg');
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images/soap/2.jpg');
 }
 #shampoo .product-item:nth-child(1) .product-item-image {
-    background-image: url('http://swancrb1t.hn-bkt.clouddn.com/shampoo/1.jpg');
+    background-image: url('https://cdn.jsdelivr.net/gh/makle-oman/frankincense-img@main/images/shampoo/1.jpg');
 }
 
 /* 弹窗样式 */
